@@ -50,7 +50,6 @@
 
 
 
-
 <button class="btn" @click="submit">{{ mode }}</button>
 
 
@@ -59,7 +58,7 @@
 </p>
 
 
-<button v-if="mode==='Login'" class="text-sm mt-2 text-gray-500">ورود با گوگل</button>
+<button v-if="mode==='Login'" class="text-sm mt-2 mr-3 text-gray-500">ورود با گوگل</button>
 <button v-if="mode==='Login'" class="text-sm text-red-500">فراموشی رمز عبور</button>
 </div>
 </div>
@@ -70,6 +69,8 @@
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { useAuthStore } from '@/store/auth'
+
+
  // شروع کپچا
 import { onMounted} from 'vue'
 
